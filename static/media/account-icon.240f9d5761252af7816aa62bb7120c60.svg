@@ -1,0 +1,22 @@
+<!-- src/assets/account-icon-luxury.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none" stroke="currentColor" stroke-width="2">
+    <!-- Outer decorative frame -->
+    <circle cx="32" cy="32" r="30" stroke="#d4af37" fill="none" stroke-width="3"/>
+    <!-- Inner decorative circle -->
+    <circle cx="32" cy="32" r="25" stroke="#b29600" fill="none" stroke-width="1.5" stroke-dasharray="5,3"/>
+    
+    <!-- Profile outline -->
+    <circle cx="32" cy="26" r="8" stroke="#d4af37" fill="none" stroke-width="2"/>
+    
+    <!-- Shoulders -->
+    <path d="M24,38 Q32,46 40,38" stroke="#d4af37" fill="none" stroke-width="2"/>
+    
+    <!-- Decorative accents on top and bottom -->
+    <path d="M32,1 L32,6" stroke="#b29600" stroke-width="2"/>
+    <path d="M32,58 L32,63" stroke="#b29600" stroke-width="2"/>
+    <path d="M4,32 L9,32" stroke="#b29600" stroke-width="2"/>
+    <path d="M55,32 L60,32" stroke="#b29600" stroke-width="2"/>
+    
+    <!-- Decorative flourish (for luxury effect) -->
+    <path d="M18,50 Q32,60 46,50" stroke="#b29600" fill="none" stroke-width="1.5"/>
+</svg>
