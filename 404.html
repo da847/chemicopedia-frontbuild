@@ -1,34 +1,18 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Redirecting…</title>
     <script>
-      // GitHub Pages SPA redirect (BrowserRouter compatible)
-      // Always redirect to the site root (or repo root), NOT to the parent directory.
       (function () {
         var l = window.location;
 
-        // If you're deployed as a *project* site: /<repo>/...
-        // If you're deployed as a *user/org* site: /...
-        // We auto-detect by checking whether the first segment looks like a route.
-        var knownRoutes = new Set([
-          "about",
-          "projects",
-          "profile",
-          "profile1",
-          "profile2",
-          "profile3",
-          "profile4"
-        ]);
-
-        var parts = l.pathname.split("/").filter(Boolean); // e.g. ["zetaslate","projects","123"] or ["projects","123"]
-        var first = parts[0] || "";
-        var base = first && !knownRoutes.has(first) ? "/" + first : ""; // "/zetaslate" or ""
-
+        // Preserve the full attempted URL path (including query/hash)
         var fullPath = l.pathname + l.search + l.hash;
 
-        // Redirect to root index.html with the original path encoded
-        l.replace(l.origin + base + "/?redirect=" + encodeURIComponent(fullPath));
+        // Custom domain: always redirect to the domain root
+        l.replace(l.origin + "/?redirect=" + encodeURIComponent(fullPath));
       })();
     </script>
   </head>
